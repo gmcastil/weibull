@@ -15,7 +15,7 @@ Thoughts on the data structure:
 - Created with a table of cross section and LET values
 
 So, probably something like a ``CrossSection`` class with the following public
-attributes:
+methods:
 
   CrossSection.__init__(max, min)
   - Sets max and min LET to consider - defaults to 0 and 100
@@ -32,11 +32,10 @@ attributes:
   - Complains if update() has been run without initially running fit()
   - Accepts a dictionary, containing Weibull parameters and computes the
     Weibull function for those parameters
-  - Returns cross section as a function of LET between 0 and 100 (again,
-    something that can be changed)
-  - Returns chi-squared statistic for the function and the data
   - Perhaps two update methods - one for cross section and LET values being
     altered and another for Weibull parameters being updated
+  - Returns cross section as a function of LET between max and min.
+  - Returns chi-squared statistic for the function and the data
 
 Use Cases
 ---------
@@ -55,11 +54,6 @@ Changing any value in the table should trigger an immediate
 update of the Weibull parameters, chi-squared statistic and the plot.  Changing
 any of the Weibull parameters should also trigger an immediate update of the
 chi-squared statistic and the plot.
-
-
-  
-
-
 
 Interface
 ---------
