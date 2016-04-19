@@ -40,6 +40,7 @@ methods:
 Use Cases
 ---------
 User creates some values in a table (either manually or by Excel or something).
+
 User asks for an initial fit and expects the following:
 - UI performs an initial plot of the data
 - Weibull parameters are populated in the UI
@@ -50,6 +51,11 @@ After the initial fit, the user changes data points:
 - New Weibull parameters are populated in the UI
 - New chi-squared statistic gets calculated and shown in the UI
 
+After data are loaded and Weibull parameters populated in the UI, user changes
+one of the parameters
+- UI performs a new fit to the data
+- Calculates a new chi-squared statistic and displays it in the UI
+  
 Changing any value in the table should trigger an immediate
 update of the Weibull parameters, chi-squared statistic and the plot.  Changing
 any of the Weibull parameters should also trigger an immediate update of the
