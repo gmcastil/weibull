@@ -74,15 +74,47 @@ Provided Data:
 Primary Course (processing steps for the use case):
   1. User enters cross section with above data
   2. System validates the data
-  3. System calculates parameters for best fit to data
-  4. System delivers parameters and plotted function with data points
+  3. System displays the data
+  4. System calculates parameters for best fit to data to minimize chi-square
+  5. System delivers parameters, minimized chi-square, and plotted function
+     with data points
 
 Exception Course: Validation Error
-  1. System delivers error message to clerk
+  1. System delivers error message to user
   
+Refit after user provides new data
+++++++++++++++++++++++++++++++++++
 
+Provided Data:
+  Measured LET
+  Measured cross section
 
-     
+Primary Course:
+  1. User alters the cross section 
+  2. System validates the data
+  3. System displays the data
+  4. System calculates parameters for best fit to data to minimize chi-square
+  5. System delivers parameters, minimized chi-square, and plotted function
+     with data points
+
+Exception Course: Validation Error
+  1. System delivers error message to user
+
+Redisplay data afer user alters Weibull parameters
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Provided Data:
+  Altered Weibull parameter
+
+Primary Course:
+  1. User alters one of the Weibull parameters
+  2. System validates the data
+  3. System displays the plotted function
+  4. System recalculates chi-squared 
+
+Exception Course: Validation Error
+  1. System delivers error message to user
+
 Interface
 ---------
 Fundamentally provided functionality is to allow interactive fitting an SEE
