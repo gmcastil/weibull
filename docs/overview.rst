@@ -90,7 +90,7 @@ Provided Data:
   Measured cross section
 
 Primary Course:
-  1. User alters the cross section 
+  1. User edits the cross section data
   2. System validates the data
   3. System displays the data
   4. System calculates parameters for best fit to data to minimize chi-square
@@ -115,6 +115,12 @@ Primary Course:
 Exception Course: Validation Error
   1. System delivers error message to user
 
+     
+Looking at these first two use cases, these are really the same thing.  Could
+easily just be implemented as a function that gets called with two lists and
+returns a set of Weibull parameters and a chi-squared value.  Then the Weibull
+parameters can be fed into another function which produces the actual curve fit.
+     
 Interface
 ---------
 Fundamentally provided functionality is to allow interactive fitting an SEE
