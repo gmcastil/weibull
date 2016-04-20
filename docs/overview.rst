@@ -61,6 +61,28 @@ update of the Weibull parameters, chi-squared statistic and the plot.  Changing
 any of the Weibull parameters should also trigger an immediate update of the
 chi-squared statistic and the plot.
 
+Jacobsonian Use Cases
+~~~~~~~~~~~~~~~~~~~~~
+
+Fit initial Weibull function
+++++++++++++++++++++++++++++
+
+Provided Data:
+  Measured LET
+  Measured cross section
+
+Primary Course (processing steps for the use case):
+  1. User enters cross section with above data
+  2. System validates the data
+  3. System calculates parameters for best fit to data
+  4. System delivers parameters and plotted function with data points
+
+Exception Course: Validation Error
+  1. System delivers error message to clerk
+  
+
+
+     
 Interface
 ---------
 Fundamentally provided functionality is to allow interactive fitting an SEE
