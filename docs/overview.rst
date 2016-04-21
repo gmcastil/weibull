@@ -70,17 +70,30 @@ Fit initial Weibull function
 Provided Data:
   Measured LET
   Measured cross section
+  Max and minimum values to consider
 
 Primary Course (processing steps for the use case):
   1. User enters cross section with above data
+     - Two matched lengths of arrays of floating point values
+     - Expected to be small (perhaps only 20 entries in each)
   2. System validates the data
+     - Arrays are the same length
+     - LET are within the minimum and maximum interval specified earlier
+     - Floating point values or integers
   3. System displays the data
+     - System makes the input data available to the user
+     - This should be immutable - if the user wants to refit (for a different
+       use case, then provide new values?)
   4. System calculates parameters for best fit to data to minimize chi-square
+     - Performs a least-squares fit to the LET vs. cross section values
+     - Calculates and returns the Weibull parameters for the curve
+     - Calculates and returns the chi-squared statistic
   5. System delivers parameters, minimized chi-square, and plotted function
      with data points
 
 Exception Course: Validation Error
   1. System delivers error message to user
+
   
 Refit after user provides new data
 ++++++++++++++++++++++++++++++++++
