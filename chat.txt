@@ -1,0 +1,118 @@
+[Wed Apr 20 2016]
+*** Topic for ##physics: Don't ask to ask, just ask! Provide all data,
+    including diagrams (Hint: mathb.in imgur.com awwapp.com) |
+    Off-topic/social chan: ##not-physics | No PMs without permission | Ops at
+    ##physics-ops | Congratulations LIGO: http://j.mp/1QZaBVI
+    http://nyer.cm/OGIXgmC					        [18:19]
+*** ##physics: topic set by xihr!resu@c-50-156-82-26.hsd1.ca.comcast.net,
+    2016-02-15 01:34:11
+*** Users on ##physics: gmcastil SwiftMatt mmango CalamityBlue theTroy fstd
+    ultralazer Lucifer333 Guest74398 BlackPhoenix cryptonix2 qeed Xal mjoanis
+    Montezuma ^peter^ amdi_ TheLoneMilkMan nergis utack enthropy tmg sbellina
+    linux_dream merzo_ radsy CapsAdmin KornKage krnlyng doomlord multi_io
+    norkle KAHR-Alpha Wasped inari zackscary nealshire empyreanx Flynnn jcay
+    jdaher AndChat457281 alex10791 esas Olenji chishiki shayne BenLand100
+    picobit bilde2910 phc sr20det mofai boB_K7IQ
+*** Users on ##physics: BrainDamage LIERO Noldorin anarkhos ljames MarTango
+    Rav3n drleviathan cagmz wolfcub ineiros AEL-H1 idontcarebear deathonater
+    dude12312414 SgrA Greendweller Flonk Logicwax moei HeBD p3rs3us seg ldunn
+    sandeepkr_ jonbryan Oatmeal ldlework PotatoGim sammyb Ethoscience Jobava
+    shahri dvabr Cabanossi udevd lmatteis rudi94 chachasmooth Senji Vogone
+    ExeciN telex matt|home WaffleZ matael xiphias_ NearEDGE[AR-FX] ffabi
+    nisstyre markelite Zimsky zwisch Jean Xionaba
+*** Users on ##physics: spling peepsalot dardevelin Nik05 Guest12154
+    AntiSpamMeta blackms lss9 kstar Maxdamantus quintopia RazorX caveman
+    phykyew +dirac Cyp___ medik Cub3 Tilgaht ec\ rpcope Oksana monoprotic em
+    niston Haxxa olasd jackburton fugyk indutny Trollbernus krobzaur uunx
+    ircnode0 Polymorphism berndj R34lB0rg jackal^ koollman mpk Telvana
+    log0ymxm heinrich5991 jontxu joshd xissburg dbanet kvieta phryk kriskropd
+    duke Dan_au potatoe Se-bash max_ tuningmind hoverbear Levite
+*** Users on ##physics: cantstanya kaizen3_ Vaski Venusaur Enthralled wirwe_
+    Aster sneke pelegreno_ Laurenceb_ kloeri ketas jv krator44 rettaw
+    meltingwax mozzarella majest1c RedOrangeZ tonsofpcs Cprossu Xenolithic
+    Cetusx ollien xihr evoqd plitter cyphar mniip zzxc komugi kPa toastydeath
+    rikut ygeLN SpeedEvil @ChanServ Ring0` tclamb n8o devster31 yarou nomseazd
+    midnightmagic gratimax gelswip ubuntor dualbus iz pythonsnake asd6a opus
+    Ray` o`connor naudiz EvanR Gallomimia
+*** Users on ##physics: PlanckWalk Jazzdude firewyre Sigyn papa- loose
+    lukky513 Fleurety RickyB98 dustinm edenist dock9 lord4163 pheizax nsh
+    simcop2387 aca_ john51_ CIA GoGi theBlah joel135 TheVoid negatratoron woo2
+    Skruff Yugidude1 pdxleif mrdata_ vigilvindex worstadmin michael_mbp
+    karasu1 ryao gniourf lohfu zymurgy nb PityDaFool xcpep_ wolf_moz- Extreme
+    Puskis jacobwg bananagram lala vikash-afk spooky RobinC skarn @sujeet
+    Xjs|moonshine InPhase fractal bwehlin3 Irrelium k1000
+*** Users on ##physics: Xark chewyDelicious erdic wyre sqrt2 seefo1 MegaManSec
+    ktrask nopf kalz emilbayes darthvorik CustosL1m3n CCFL_Man forrestv
+    nemesit|znc mueslo Trieste MissionCritical QYD codehero iota_ YP-Cloud_
+    rwg MKCoin downtime Meow-J Xenthys fangs124 bkpark pppingme Guest3431
+    you10 iravan Xenolith slick tty2 ilbelkyr altcp ChuangTzu_ davidc___ woky_
+    Ariadeno_ heili GGMethos D9 sparetire Celelibi UukGoblin superkuh revprez
+    ksool revprez_ att3 neoweb unreal jle` ix
+*** Users on ##physics: githogori ecks ashnur Hatamoto Taylor redabhr kraft
+    himiko fedorafan aedla Defcronyke +curie_ abwabwa mh_le cynicalcats
+    linuxthefish albel727 tomaw nmz787 davor
+*** ##physics modes: +Ccgntjf 3:5 ##physics-overflow
+*** ##physics was created on 2007-12-18 21:02:33
+<gmcastil> I have an observable that is known to have a functional form of
+	   some f(x).  I have a bunch of observations of f at various x
+	   values.  The functional form has 4 constants that determine the fit
+	   of the curve to the data.  I want to perform such a fit and
+	   determine those four constants.  What am I looking for to do this
+	   sort of thing?					        [18:23]
+<xihr> just a standard curve fit				        [18:24]
+<gmcastil> i know the functional form of f(x), but i'd like to identify the
+	   constants a, b, c, d that determine the fit
+<gmcastil> xihr: its not linear					        [18:25]
+<xihr> so?
+<xihr> that's why it's called a "curve fit," not a "line fit"
+<abwabwa> how to learn the drugs of physics?
+<abwabwa> I wanna get high with this
+<xihr> abwabwa: boring
+<gmcastil> xihr: what particular technique are you referring to?        [18:26]
+<PlanckWalk> gmcastil: The most common technique is just minimizing sum of
+	     squared errors for the data points.
+<xihr> gmcastil: least squares fitting is the most common	        [18:27]
+<PlanckWalk> In some applications that's not really appropriate, but it's a
+	     good first guess and there are tons of techniques for it.
+<gmcastil> would both cases support using chi-squared to estimate goodness of
+	   fit?							        [18:29]
+<PlanckWalk> It depends upon what your noise model is
+<PlanckWalk> If it's independent additive gaussian noise, then yes      [18:30]
+<gmcastil> yeah, probably
+<PlanckWalk> (Chi-squared is the distribution of a sum of squared normal
+	     random variables)					        [18:32]
+<gmcastil> if it were a different noise model, then i'd need a different
+	   statistic to describe the goodness of fit correct?
+<PlanckWalk> Yes
+<gmcastil> for now, its probably good enough - the phenomenon isnt understood
+	   well-enough to get really excited about the noise model.  2X is
+	   good enough						        [18:33]
+<gmcastil> so i'd want to look for references to minimizing 'sum of squared
+	   errors for curve fitting' then?			        [18:34]
+<xihr> google: least squares fitting				        [18:40]
+<gmcastil> are least squares and sum of squared errors the same?        [18:41]
+<xihr> least squares fitting means you minimize the sum of squared errors
+<gmcastil> the articles i found on wolfram only referred to linear or
+	   polynomial fits - what if its a more complicated function like an
+	   exponential?						        [18:46]
+<xihr> sure, search for derivations and you can calculate the formula yourself
+<gmcastil> not sure what you mean				        [18:47]
+<gmcastil> http://mathworld.wolfram.com/LeastSquaresFitting.html for example 
+<xihr> the formulas for finding the least squares fit of a given function is
+       derived through calculus: write down the sum of least squares with
+       respect to a set of parameters, set them equal to zero, and solve
+<xihr> set their derivatives equal to zero*
+<xihr> gmcastil: that pages shows a derivation			        [18:48]
+<gmcastil> eqn 3
+<gmcastil> so follow the same algorithm, but with a different f(a, b)....like
+	   f(a, b, c, d)
+<xihr> gmcastil: yep						        [18:49]
+<gmcastil> right on, thanks
+<xihr> if your fitting function is common enough, you can just try googling
+       for people who have already done that ... if not, you'll have to do it
+       yourself
+<xihr> ... or just use a CAS
+<gmcastil> xihr: yeah, i could actually just use scipy to do it i think
+								        [18:50]
+<gmcastil> thanks i'll hack on it a while			        [18:52]
+##physics> 
